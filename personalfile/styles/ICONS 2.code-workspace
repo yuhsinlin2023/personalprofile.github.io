@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../ICONS 2"
+		},
+		{
+			"path": "../pictures"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "styles"
+	}
+}

@@ -1,0 +1,135 @@
+@font-face {
+    font-family:"myFont";
+    src: url("./清松手寫體1.ttf");
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "myFont",DFkai-sb,sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+
+}
+
+header div.top{
+    padding: 1rem;
+    background-image: url("./images/簡報1.png");
+    /* background-size: cover ; */
+}
+header div.top h1{
+    font-size: 2.5rem;
+
+}
+header div.top h3{
+    font-size: 1rem;
+    
+}
+
+header nav {
+    background-color: black;
+}
+header nav ul {
+    display:flex;
+    list-style: none;
+    /* 若不設定none前面會有黑色圓點標籤 */  
+}
+
+header nav ul li{
+    padding: 0.8rem 1.2rem;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    /* 若不設定none文字底下會有白線 */  
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    /* transition是外觀的轉換屬性，滑鼠游標移過去時，會緩慢地變成黃色 */
+}
+
+nav ul li a:hover {
+    color: yellow;
+    /* hover是當滑鼠移至某元件時，該元件的反應，在這邊要變成黃色   */  
+}
+.active{
+    color: yellow;
+    /* 讓html網頁所在的頁面呈現顏色 */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* 設定為wrap是希望在手機頁面也可以自動排版 */
+}
+main.no-flex {
+    display: block;
+}
+
+main section {
+    padding: 1rem;
+/* 不設定的話文字都貼齊網頁邊 */
+}
+
+section.left {
+    flex: 1 1 300px;
+}
+
+section.left img {
+    width: 90%;
+}
+section.left h3 {
+    margin: 1rem;
+}
+
+section.left table {
+    margin-top: 1rem;
+}
+
+section.left table,tr,td {
+    padding: 0.25rem;
+}
+section.right {
+    flex: 3 1 500px;
+}
+
+section.right h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem ;
+}
+/* section.right p { */
+/* 不用section是因為只用p的話整個網頁的p都適用 */
+p {
+    padding: 0.5rem 0rem ;
+    /* 上下間隔0.5、左右間隔0 */
+}
+section.right ul {
+    margin-left: 2rem;
+}
+.feature h3 {
+    font: size 1.5rem;
+    color: rgb(9, 91, 0);
+}
+.feature h4 {
+    font: size 1.05rem;
+    color: rgb(6,120,120);
+}
+.feature {
+    margin: 1rem;
+    border: 2px solid cornflowerblue;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 600px){
+    header nav ul {
+        flex-direction: column;
+    }
+}
+    
